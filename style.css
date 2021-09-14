@@ -17,8 +17,6 @@ h1 {
   font-family: houschka-rounded, sans-serif;
   font-weight: 600;
   font-style: normal;
-  padding-bottom: 30px;
-  padding-top: 30px;
   font-size: 25px;
 }
 
@@ -71,6 +69,139 @@ a {
   font-style: normal;
 }
 
+.container-timer {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 1fr;
+  grid-template-rows: 0.5fr 1.7fr 0.8fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  border-radius: 6px;
+  background-color: #d85656;
+  align-content: center;
+  margin-top: 80px;
+  height: 400px;
+  grid-template-areas:
+    "buttons buttons buttons"
+    "timer timer timer"
+    "start-button start-button start-button";
+}
+
+.buttons {
+  grid-area: buttons;
+  padding-left: 3em;
+  padding-top: 1em;
+}
+
+.button {
+  background-color: #ab4041;
+  color: white;
+  border: #ab4041;
+  border-radius: 10px;
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+  text-align: center;
+  margin: 13px;
+  cursor: pointer;
+}
+
+.button2 {
+  background-color: #d85656;
+  color: white;
+  border: #d85656;
+}
+.button3 {
+  background-color: #d85656;
+  color: white;
+  border: #d85656;
+}
+
+.button2:hover {
+  background-color: #ab4041;
+  color: white;
+  border: #ab4041;
+}
+
+.button3:hover {
+  background-color: #ab4041;
+  color: white;
+  border: #ab4041;
+}
+
+.button:active {
+  background-color: #d85656;
+}
+
+.timer {
+  grid-area: timer;
+  color: white;
+  text-align: center;
+}
+
+.timer h1 {
+  font-size: 150px;
+  font-weight: 620;
+  padding: none;
+}
+
+.start-button {
+  grid-area: start-button;
+  padding-left: 10em;
+  padding-bottom: 1em;
+}
+
+.button-start {
+  background-color: white;
+  color: #d85656;
+  border: #d85656;
+  border-radius: 5px;
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 55px;
+  padding-right: 55px;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0px 5px #e8e9e9;
+  cursor: pointer;
+}
+
+.button-start:hover {
+  animation-name: bounce;
+  animation-duration: 1s;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    opacity: 0.5;
+    transform: translate(0px, 190px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+.button-start:active {
+  background-color: #fdebeb;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.9fr 1.2fr 0.9fr;
@@ -103,6 +234,11 @@ a {
 .white-two {
   grid-area: white-two;
   color: black;
+}
+
+.white-two h1 {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .white-two a {

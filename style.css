@@ -76,7 +76,7 @@ a {
   gap: 0px 0px;
   grid-auto-flow: row;
   border-radius: 6px;
-  background-color: #d85656;
+  background-color: #df645f;
   align-content: center;
   margin-top: 50px;
   height: 400px;
@@ -93,9 +93,9 @@ a {
 }
 
 .button {
-  background-color: #ab4041;
+  background-color: #ab3f3f;
   color: white;
-  border: #ab4041;
+  border: #ab3f3f;
   border-radius: 10px;
   font-family: houschka-rounded, sans-serif;
   font-weight: 600;
@@ -111,20 +111,20 @@ a {
 }
 
 .button2 {
-  background-color: #d85656;
+  background-color: #df645f;
   color: white;
-  border: #d85656;
+  border: #df645f;
 }
 .button3 {
-  background-color: #d85656;
+  background-color: #df645f;
   color: white;
-  border: #d85656;
+  border: #df645f;
 }
 
 .button2:hover {
-  background-color: #ab4041;
+  background-color: #ab3f3f;
   color: white;
-  border: #ab4041;
+  border: #ab3f3f;
 }
 
 .button3:hover {
@@ -157,8 +157,8 @@ a {
 
 .button-start {
   background-color: white;
-  color: #d85656;
-  border: #d85656;
+  color: #df645f;
+  border: #df645f;
   border-radius: 5px;
   font-family: houschka-rounded, sans-serif;
   font-weight: 700;
@@ -218,7 +218,7 @@ a {
 
 .nav-bar {
   grid-area: nav-bar;
-  background: #d04345;
+  background: #d14c4c;
   top: 0;
   width: 100%;
   margin: 0;
@@ -227,7 +227,7 @@ a {
   box-sizing: border-box;
   font-family: houschka-rounded, sans-serif;
   font-style: normal;
-  border-bottom: 1px solid #b93839;
+  border-bottom: 1px solid #c54a45;
 }
 
 .nav-bar .logo {
@@ -237,7 +237,7 @@ a {
   padding-left: 26rem;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .nav-bar .logo a {
@@ -289,32 +289,24 @@ a {
   line-height: 50px;
   font-size: 18px;
   padding: 8px 10px;
-  font-weight: 500;
-  background-color: #d85656;
+  font-weight: 600;
+  background-color: #df645f;
   border-radius: 7px;
-}
-
-.nav-bar ul li a:hover {
-  color: #9b0000;
-}
-
-.nav-bar ul li a:active {
-  color: #fdd3da;
 }
 
 .red-one {
   grid-area: red-one;
-  background-color: #d04345;
+  background-color: #d14c4c;
 }
 
 .red-two {
   grid-area: red-two;
-  background-color: #d04345;
+  background-color: #d14c4c;
 }
 
 .red-three {
   grid-area: red-three;
-  background-color: #d04345;
+  background-color: #d14c4c;
 }
 
 .white-one {
@@ -358,6 +350,14 @@ a {
     height: 400px;
     width: 500px;
   }
+
+  .nav-bar ul {
+    float: right;
+    list-style: none;
+    padding-right: 10rem;
+    position: relative;
+    padding-top: 16px;
+  }
 }
 
 @media all and (max-width: 1300px) {
@@ -373,7 +373,7 @@ a {
   .nav-bar ul {
     float: right;
     list-style: none;
-    padding-right: 12rem;
+    padding-right: 10rem;
     position: relative;
     padding-top: 16px;
   }
@@ -403,21 +403,16 @@ a {
   }
 }
 
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1075px) {
   .nav-bar .logo {
-    float: left;
-    color: white;
     font-size: 30px;
     padding-top: 20px;
-    padding-left: 18rem;
+    padding-left: 17rem;
     font-weight: 700;
   }
 
   .nav-bar ul {
-    float: right;
-    list-style: none;
-    padding-right: 12rem;
-    position: relative;
+    padding-right: 8rem;
     padding-top: 16px;
   }
 
@@ -439,18 +434,14 @@ a {
 
 @media all and (max-width: 1000px) {
   .nav-bar .logo {
-    float: left;
-    color: white;
     font-size: 30px;
-    padding-left: 10rem;
+    padding-left: 8rem;
     padding-top: 20px;
     font-weight: 700;
   }
 
   .nav-bar ul {
-    float: right;
-    list-style: none;
-    padding-right: 9rem;
+    padding-right: 4rem;
     position: relative;
     padding-top: 16px;
   }
@@ -460,7 +451,6 @@ a {
   }
 
   .start-button {
-    grid-area: start-button;
     padding-left: 10em;
     padding-bottom: 2rem;
   }
@@ -468,17 +458,12 @@ a {
 
 @media all and (max-width: 800px) {
   .nav-bar .logo {
-    float: left;
-    color: white;
-    font-size: 30px;
     padding-left: 2rem;
     padding-top: 20px;
     font-weight: 700;
   }
 
   .nav-bar ul {
-    float: right;
-    list-style: none;
     padding-right: 2rem;
     position: relative;
     padding-top: 16px;
@@ -489,10 +474,8 @@ a {
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 660px) {
   .nav-bar .logo {
-    float: left;
-    color: white;
     font-size: 30px;
     padding-left: 1rem;
     padding-top: 20px;
@@ -500,8 +483,6 @@ a {
   }
 
   .nav-bar ul {
-    float: right;
-    list-style: none;
     padding-right: 1rem;
     position: relative;
     padding-top: 16px;
@@ -522,16 +503,19 @@ a {
     padding-left: 8em;
     padding-bottom: 2rem;
   }
+
+  .nav-bar ul li a {
+    padding: 7px 6px;
+  }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 600px) {
   .nav-bar .logo {
     display: none;
   }
 
   .nav-bar ul {
-    list-style: none;
-    padding-right: 6rem;
+    padding-right: 3rem;
     position: relative;
     padding-top: 16px;
     padding-bottom: 16px;

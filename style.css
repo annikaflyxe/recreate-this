@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 25px;
+}
+
+h2 {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+}
+
+ul {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: normal;
+  list-style: none;
+  line-height: 30px;
+  padding-top: 20px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: #d04345;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}
+
+ol {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  font-size: 15px;
+  line-height: 30px;
+  margin-left: 2em;
+}
+
+li {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  font-family: houschka-rounded, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.9fr 1.2fr 0.9fr;
+  grid-template-rows: 1.2fr 1.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "red-one red-two red-three"
+    "white-one white-two white-three"
+    "footer-one footer-two footer-three";
+}
+.red-one {
+  grid-area: red-one;
+  background-color: #d04345;
+}
+
+.red-two {
+  grid-area: red-two;
+  background-color: #d04345;
+}
+
+.red-three {
+  grid-area: red-three;
+  background-color: #d04345;
+}
+
+.white-one {
+  grid-area: white-one;
+}
+
+.white-two {
+  grid-area: white-two;
+  color: black;
+}
+
+.white-two a {
+  color: #d04345;
+  text-decoration: none;
+}
+
+.white-three {
+  grid-area: white-three;
+}
+
+.footer-one {
+  grid-area: footer-one;
+}
+
+.footer-two {
+  grid-area: footer-two;
+}
+
+.footer-three {
+  grid-area: footer-three;
+}

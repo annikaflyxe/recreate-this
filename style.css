@@ -202,10 +202,118 @@ a {
   background-color: #fdebeb;
 }
 
+.container-tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "milk-the-cat milk-the-cat milk-the-cat"
+    "tasks tasks tasks"
+    "check-milk check-milk check-milk"
+    "code-this code-this code-this"
+    "add-task add-task add-task"
+    "est-time est-time est-time";
+}
+
+.container-tasks {
+  font-family: houschka-rounded, sans-serif;
+}
+
+.milk-the-cat {
+  grid-area: milk-the-cat;
+}
+
+.milk-the-cat p {
+  color: white;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.milk-the-cat h3 {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+
+.tasks {
+  grid-area: tasks;
+  border-bottom: 1px solid #eacbca;
+}
+
+.tasks h3 {
+  color: white;
+}
+
+.check-milk {
+  grid-area: check-milk;
+  background-color: white;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  border-left: 6px solid black;
+}
+
+.check-milk i {
+  padding-right: 10px;
+}
+
+.code-this {
+  grid-area: code-this;
+  background-color: white;
+  border-radius: 3px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.code-this i {
+  padding-right: 10px;
+}
+
+.code-this h3 {
+  color: #bbbbbb;
+  text-decoration: line-through;
+}
+
+.add-task {
+  grid-area: add-task;
+  border-radius: 3px;
+  border: 2px solid #dc8582;
+  border-style: dashed;
+  background-color: #c94b46;
+  text-align: center;
+  color: #eebfbd;
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+
+.add-task i {
+  padding-right: 10px;
+}
+
+.est-time {
+  grid-area: est-time;
+  background-color: #df645f;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #eca29f;
+}
+
+.est-time p {
+  font-size: 17px;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1.1fr 0.9fr;
-  grid-template-rows: 0.12fr 1.58fr 2.1fr 0.4fr;
+  grid-template-rows: 0.12fr 1.58fr 1.4fr 0.4fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -303,6 +411,7 @@ a {
   grid-area: red-two;
   background-color: #d14c4c;
   align-content: center;
+  padding-bottom: 60px;
 }
 
 .red-three {
@@ -339,6 +448,12 @@ a {
 
 .footer-two {
   grid-area: footer-two;
+  text-align: center;
+  border-top: 1px solid #efefef;
+  font-family: houschka-rounded, sans-serif;
+  color: #785e60;
+  word-spacing: 10px;
+  padding-top: 30px;
 }
 
 .footer-three {
@@ -367,7 +482,7 @@ a {
     color: white;
     font-size: 30px;
     padding-top: 20px;
-    padding-left: 20rem;
+    padding-left: 18rem;
     font-weight: 700;
   }
 
@@ -408,7 +523,7 @@ a {
   .nav-bar .logo {
     font-size: 30px;
     padding-top: 20px;
-    padding-left: 16rem;
+    padding-left: 14rem;
     font-weight: 700;
   }
 
@@ -457,7 +572,7 @@ a {
   }
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 815px) {
   .nav-bar .logo {
     padding-left: 2rem;
     padding-top: 20px;
@@ -475,16 +590,13 @@ a {
   }
 }
 
-@media all and (max-width: 660px) {
+@media all and (max-width: 700px) {
   .nav-bar .logo {
-    font-size: 30px;
-    padding-left: 1rem;
-    padding-top: 20px;
-    font-weight: 700;
+    display: none;
   }
 
   .nav-bar ul {
-    padding-right: 1rem;
+    padding-right: 6rem;
     position: relative;
     padding-top: 16px;
   }
@@ -516,7 +628,7 @@ a {
   }
 
   .nav-bar ul {
-    padding-right: 3rem;
+    padding-right: 4rem;
     position: relative;
     padding-top: 16px;
     padding-bottom: 16px;

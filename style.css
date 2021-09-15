@@ -242,6 +242,7 @@ a {
 .tasks {
   grid-area: tasks;
   border-bottom: 1px solid #eacbca;
+  padding-bottom: 10px;
 }
 
 .tasks h3 {

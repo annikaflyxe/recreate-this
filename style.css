@@ -313,7 +313,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: 1fr 1.1fr 0.9fr;
-  grid-template-rows: 0.12fr 1.58fr 1.4fr 0.4fr;
+  grid-template-rows: 0.12fr 1.58fr 1.4fr 0.2fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -400,6 +400,10 @@ a {
   font-weight: 600;
   background-color: #df645f;
   border-radius: 7px;
+}
+
+.nav-bar ul li a:hover {
+  background-color: #ab3f3f;
 }
 
 .red-one {
